@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+d={}
+for i in range(n): 
+    na=input().split()
+    #phoneno=input()
+    d[na[0]]=na[1]
+while True:
+    try:
+        s=input()
+        if s in d:
+             print(s+"="+d[s])
+        else:
+             print("Not found")
+    except(EOFError):
+             break
+    
